@@ -7,9 +7,8 @@ html, body, div {
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
-    background: transparent;
+    background: url("../Images/black_big.jpg");
 }
-
 body {
     font-size: 65%;
     font-family: Arial, Helvetica, Verdana, sans-serif;

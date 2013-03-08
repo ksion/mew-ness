@@ -56,6 +56,7 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="Images\black_big.jpg" />
     <Content Include="Mobile\About.aspx" />
     <Content Include="Mobile\Account\ChangePassword.aspx" />
     <Content Include="Mobile\Account\ChangePasswordSuccess.aspx" />
