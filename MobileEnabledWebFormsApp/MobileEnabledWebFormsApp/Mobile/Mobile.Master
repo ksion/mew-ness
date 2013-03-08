@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Mobile.Master.cs" Inherits="MobileEnabledWebFormsApp.Mobile.MobileMaster" %>
+
+<%@ Register TagPrefix="KS" TagName="ProfileSnapshot" Src="~/Mobile/MobileProfileSnapshot.ascx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <link rel="icon" type="image" href="Images/rd.png" />
+    <meta name="viewport" content="width=device-width">
+    <link href="Styles/Mobile.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Snapshot.css" rel="Stylesheet" type="text/css" />
+
+    <asp:PlaceHolder ID="topNav" runat="server" Visible="true">
+        <header class="new-and-shiny">
+            <a href="#" class="nav-bars-wrapper" id="show-menu">
+                <ul class="nav-bars"><li></li><li></li><li></li></ul>
+            </a>
+            <div class="logo">
+                <p>[ A Portfolio ]</p>
+            </div>
+        </header>
+        <nav class="menu" id="menu">
+            <a href="Default.aspx">Home</a>
+            <a href="Resume.aspx">Resume</a>
+            <a href="About.aspx">About</a>
+            <a class="li-clickable" href="#">Projects</a>
+            <a class="li-clickable" href="#">Links</a>
+       </nav>
+        <KS:ProfileSnapshot ID="ProfileSnapshot" runat="server"></KS:ProfileSnapshot>
+    </asp:PlaceHolder>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+    </div>
+    </form>
+</body>
+<footer>
+ 
+</footer>
+</html>

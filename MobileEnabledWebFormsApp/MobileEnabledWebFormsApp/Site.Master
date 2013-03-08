@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="MobileEnabledWebFormsApp.SiteMaster" %>
+<%@ Register TagPrefix="KS" TagName="ProfileSnapshot" Src="~/ProfileSnapshot.ascx"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title>Keanna Sion | Portfolio</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class = "home">
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="navMenu">
+                <asp:Menu ID="MagicalMenu" runat="server" CssClass="menu" Orientation="Horizontal">
+                    <items>
+                        <asp:MenuItem Text="Home" />
+                        <asp:MenuItem Text="Resume" />
+                        <asp:MenuItem Text="Projects" />
+                        <asp:MenuItem Text="Journal" />
+                        <asp:MenuItem Text="Photos" />
+                        <asp:MenuItem Text="Links" />
+                    </items>
+                </asp:Menu>
+            </div>
+                
+                <h1>
+                    Keanna Sion
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            
+        </div>
+        <div class="main">
+        <KS:ProfileSnapshot id="ProfileSnapshot" runat="server"></KS:ProfileSnapshot>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    
+    <div class="footer">
+        Without it...we'd be lost...
+    </div>
+    </form>
+</body>
+</html>

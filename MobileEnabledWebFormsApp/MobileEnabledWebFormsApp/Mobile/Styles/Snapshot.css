@@ -1,0 +1,159 @@
+﻿.profile-header {
+    overflow: hidden;
+    background: rgb(69,72,77); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(69,72,77,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.08);
+    padding: 0px;
+    position: relative;
+    width: 100%;
+}
+
+.profile-header .contactinfo {
+    margin: 0 16px 10px 16px;
+    color: rgb(255, 0, 128);
+}
+
+.profile-header .contactinfo dl {
+    margin: 5px 0 5px;
+    font-size: 13.2 px;
+    color: rgb(206, 206, 206);
+}
+
+.profile-header .contactinfo dt {
+    display: none;
+}
+
+.profile-header .info dd.second {
+    border-left: 1px solid #ccc;
+    padding-left: 6px;
+}
+
+#content .profile-header h2, #mobile-content .profile-header h2 {
+    color: rgb(255, 0, 128);
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 19px;
+    margin-bottom: 3px;
+}
+
+.profile-header .picture {
+    margin: 0 15px 15px 0;
+    border: 1px solid rgb(255, 0, 128);
+    position: relative;
+    float: left;
+}
+
+img.photo {
+    display: block;
+    border: 2px solid #fff;
+}
+
+.profile-header .details dd {
+    display: inline;
+    margin: 0px;
+    padding: 0 4px 0 0;
+    font-size: 12px;
+}
+
+.profile-header p {
+    color: rgb(255, 91, 177);
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+.profile-header #overview {
+    overflow: visible;
+    background: url('http://s.c.lnkd.licdn.com/scds/common/u/img/bg/bg_grey_dotted_h-line_4x1.png') repeat-x;
+    border: 0;
+    border-width: 0 1px 2px 0;
+    margin: 16px 16px 0px;
+    padding: 10px 0;
+    clear: both;
+}
+
+#overview dt {
+    width: 115px;
+    left: -10px;
+    color: rgb(215, 215, 215);
+    font-size: 12px;
+    margin: 1px 0 10px;
+}
+
+#overview dd {
+    padding: 0 0 3px 122px;
+    margin: -2.55em 0 0;
+    vertical-align: baseline;
+}
+
+#overview ul, #overview li {
+    color: rgb(215, 215, 215);
+    font-size: 115%;
+}
+
+#overview a {
+    color: rgb(255, 128, 0);
+}
+
+#content p {
+    word-wrap: break-word;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+#title {
+    text-align: right;
+}
+
+@media (max-width: 440px) {
+    .profile-header .contactinfo dl {
+    display: inline-block;
+    margin: -1px 0 5px;
+    font-size: 13.2 px;
+    color: rgb(206, 206, 206);
+    }
+
+    .profile-header .details dd {
+    display: inline;
+    margin: 0px;
+    padding: 0 1px 0 0;
+    font-size: 12px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    #content .profile-header h2 {
+        display: inline-block;
+        margin-bottom: -2px;
+        margin-top: 10px;
+    }
+
+    #content p {
+        word-wrap: normal;
+        display: inline-block;
+    }
+
+    img.photo {
+        border: 0;
+        display: none;
+    }
+
+    .profile-header .picture {
+        border: 0;
+        margin: 0;
+    }
+
+    .profile-header p {
+        margin-top: 5px;
+        margin-bottom: 7px;
+    }
+}
